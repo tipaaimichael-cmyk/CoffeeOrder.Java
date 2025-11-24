@@ -1,0 +1,35 @@
+Name michael tipai olomunyak
+   //Reg No: S08-8430-2024
+   //program to calculate the student's grade'
+import java.util.Scanner;
+
+class Student {
+    private String name;
+    private double marks;
+
+    // Constructor to initialize attributes
+    public Student(String name, double marks) {
+        this.name = name;
+        this.marks = marks;
+    }
+
+    // Method to display student details
+    public void displayDetails(String grade) {
+        System.out.println("Student Name: " + name);
+        System.out.println("Marks: " + marks);
+        System.out.println("Grade: " + grade);
+    }
+    public double getMarks() {
+        return marks;
+    }
+}
+
+  //grade calculator
+class GradeCalculator {
+    // Method to calculate the grade based on the student's marks'
+    public String calculateGrade(double marks) {
+        if (marks >= 90) {
+            return "A";
+        } else if (marks >= 75) {
+            return "B";
+   
